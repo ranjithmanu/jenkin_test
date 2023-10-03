@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="increment" owl="1">
+        <buttton id="increment_button" type="object" class="btn btn-danger"
+                 name="Increment Button" t-on-click="() => this.changeValue(-1)">-
+        </buttton>
+        <span class="text-white m-2" t-esc="state.value"/>
+        <buttton id="increment_button" type="object" class="btn btn-success"
+                 name="Increment Button" t-on-click="() => this.changeValue(1)">+
+        </buttton>
+    </t>
+</templates>

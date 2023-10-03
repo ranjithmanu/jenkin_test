@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="bool_widget" owl="1">
+        <span class="badge rounded-pill border" t-esc="trueValue" t-attf-style="background-color:{{ props.value ? trueColor: DefaultColor }};"
+                      t-att-class="props.value ? text-black: text-white" t-on-click="() => this.updateVal(true)"/>
+        <span class="badge rounded-pill border" t-esc="falseValue" t-attf-style="background-color:{{ props.value ? DefaultColor: falseColor }};"
+        t-att-class="props.value ? text-black: text-white" t-on-click="() => this.updateVal(false)"/>
+    </t>
+</templates>
